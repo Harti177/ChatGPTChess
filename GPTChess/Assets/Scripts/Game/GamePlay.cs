@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using TMPro;
 
 namespace ChatGPTChess
 {
@@ -36,6 +37,12 @@ namespace ChatGPTChess
         [SerializeField] private ChatGPTClient gptClient;
         string initialPrompt = "We are going to play chess now. We can play describing the moves using algebraic notation. I will be white. Tell your move in the same format as I said. Don't ever repeat my move. My move is ";
         List<string[]> chatHistory;
+
+        [SerializeField] private MSTTS mstts;
+
+        [SerializeField] private GameObject chatWindow; 
+        [SerializeField] private TextMeshProUGUI chatWindowContent; 
+        [SerializeField] private TMP_InputField chatField; 
 
         bool firstMoveDone = false;
 
@@ -175,6 +182,9 @@ namespace ChatGPTChess
             cancelSelection.gameObject.SetActive(false);
             approveSelection.gameObject.SetActive(false);
 
+            endSquare.SetCoin(startSquare.GetCoin());
+            startSquare.SetCoin(null);
+
             startSquare.HighLight(false);
             endSquare.HighLight(false);
         }
@@ -190,9 +200,6 @@ namespace ChatGPTChess
 
             //      return;
             //}
-
-            endSquare.SetCoin(startSquare.GetCoin());
-            startSquare.SetCoin(null);
 
             startSquare = null;
             endSquare = null;
@@ -232,24 +239,61 @@ namespace ChatGPTChess
 
         public void PlayFirstMove(string move)
         {
-            chatHistory.Add(new string[] { "user", initialPrompt + move });
+            AddToChatHistory(new string[] { "user", initialPrompt + move }); 
 
             StartCoroutine(gptClient.Ask(chatHistory, (response) =>
             {
                 OnOpponentMove(response.Choices[0].Message.Content);
-                chatHistory.Add(new string[] { "system", response.Choices[0].Message.Content });
+                mstts.Speak(response.Choices[0].Message.Content);
+                AddToChatHistory(new string[] { "system", response.Choices[0].Message.Content }); 
             }));
         }
 
         public void PlayNextMove(string move)
         {
-            chatHistory.Add(new string[] { "user", "My next move is" + move });
+            AddToChatHistory(new string[] { "user", "My next move is" + move }); 
 
             Debug.Log(chatHistory.Count);
             StartCoroutine(gptClient.Ask(chatHistory, (response) =>
             {
                 OnOpponentMove(response.Choices[0].Message.Content);
-                chatHistory.Add(new string[] { "system", response.Choices[0].Message.Content });
+                mstts.Speak(response.Choices[0].Message.Content);
+                AddToChatHistory(new string[] { "system", response.Choices[0].Message.Content }); 
+            }));
+        }
+
+        public void AddToChatHistory(string[] content)
+        {
+            chatHistory.Add(content);
+
+            string chatHistoryText = "";
+
+            foreach (string[] chat in chatHistory)
+            {
+                if(chat[0] == "user")
+                    chatHistoryText += "\n" + chat[0] + ": " + chat[1];
+                else
+                    chatHistoryText += "\n" + "<color=blue>" + chat[0] + ": " + chat[1] + "</color=blue>";
+            }
+
+            chatWindowContent.text = chatHistoryText; 
+        }
+
+        public void OnClickShowWindow()
+        {
+            chatWindow.SetActive(!chatWindow.activeSelf);
+        }
+
+        public void OnClickAsk()
+        {
+            if (string.IsNullOrEmpty(chatField.text)) return; 
+
+            AddToChatHistory(new string[] { "user", chatField.text});
+
+            StartCoroutine(gptClient.Ask(chatHistory, (response) =>
+            {
+                mstts.Speak(response.Choices[0].Message.Content);
+                AddToChatHistory(new string[] { "system", response.Choices[0].Message.Content });
             }));
         }
 
