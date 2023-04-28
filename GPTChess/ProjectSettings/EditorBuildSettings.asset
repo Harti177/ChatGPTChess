@@ -5,7 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/ChessGameScene.unity
+    guid: e5834b3b0ad66d24097d7f1c99a57600
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: c404b838adde5f24ebbdce16bad3983e, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ebf93ff8ccce1b24d848c70f83ce52c1, type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 2d2c0ac1df120bf43be68493495da735, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3979a95a52a241345b967f2f6922f48c, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6cc61f3f9b39a3d44947b3540363941c, type: 2}
