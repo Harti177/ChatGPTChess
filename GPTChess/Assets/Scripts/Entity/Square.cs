@@ -26,6 +26,11 @@ namespace ChatGPTChess
 
         }
 
+        public void SetValue(string value)
+        {
+            squareValue = value; 
+        }
+
         public string GetValue()
         {
             return squareValue;

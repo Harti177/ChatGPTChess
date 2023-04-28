@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 namespace ChatGPTChess
 {
@@ -26,10 +27,49 @@ namespace ChatGPTChess
         [SerializeField] private Button cancelSelection;
         [SerializeField] private Button approveSelection;
 
+        [SerializeField] Transform coinsParent;
+        [SerializeField] Transform squaresParent;
+        List<CoinDetail> coins;
+        Dictionary<string, Square> squares; 
+
+        //ChatGPT
+        [SerializeField] private ChatGPTClient gptClient;
+        string initialPrompt = "We are going to play chess now. We can play describing the moves using algebraic notation. I will be white. Tell your move in the same format as I said. Don't ever repeat my move. My move is ";
+        List<string[]> chatHistory;
+
+        bool firstMoveDone = false;
+
         // Start is called before the first frame update
         void Start()
         {
             playerCoinType = Coin.Type.White;
+
+            Initialize();
+        }
+
+        private void Initialize()
+        {
+            chatHistory = new List<string[]>();
+
+            coins = new List<CoinDetail>();
+            squares = new Dictionary<string, Square>(); 
+
+            foreach (Transform child in coinsParent)
+            {
+                CoinDetail coinDetail = new CoinDetail
+                {
+                    coin = child.GetComponent<Coin>(),
+                    initialPosition = child.localPosition
+                };
+                coins.Add(coinDetail);
+            }
+
+            foreach (Transform child in squaresParent)
+            {
+                squares.Add(child.GetComponent<Square>().GetValue(), child.GetComponent<Square>());
+            }
+
+            SetCoinsToSquaresInitially();
         }
 
         // Update is called once per frame
@@ -74,9 +114,7 @@ namespace ChatGPTChess
         {
             if (startSquare == null)
             {
-                if (square.GetCoin() == null) return;
-
-                if (square.GetCoin().GetCoinType() != playerCoinType)
+                if (square.GetCoin() == null || square.GetCoin().GetCoinType() != playerCoinType)
                 {
                     return;
                 }
@@ -130,40 +168,112 @@ namespace ChatGPTChess
             }
         }
 
-        public void OnClickApproveSelection()
+        public void OnPlayerMoveFinished()
         {
-            PlayMove();
-
             playerTurnMode = PlayerTurnMode.Finished;
 
             cancelSelection.gameObject.SetActive(false);
             approveSelection.gameObject.SetActive(false);
-        }
-
-        public void PlayMove()
-        {
-            Debug.Log(startSquare.GetValue() + endSquare.GetValue());
-
-            OnMoveValid();
-        }
-
-        public void OnMoveNotValid()
-        {
-            playerTurnMode = PlayerTurnMode.NothingSelected;
-        }
-
-        public void OnMoveValid()
-        {
-            playerTurnMode = PlayerTurnMode.Waiting;
 
             startSquare.HighLight(false);
             endSquare.HighLight(false);
+        }
+
+        public void OnOpponentMove(string response)
+        {
+            playerTurnMode = PlayerTurnMode.NothingSelected;
+
+            //if(response.Contains("Illegal") || response.Contains("illegal"))
+            //{
+            //    startSquare.SetCoin(endSquare.GetCoin());
+            //    endSquare.SetCoin(null);
+
+            //      return;
+            //}
 
             endSquare.SetCoin(startSquare.GetCoin());
             startSquare.SetCoin(null);
 
             startSquare = null;
             endSquare = null;
+
+            string responseMove = response.Split('(', ')')[1];
+            responseMove = responseMove.Replace(" ", "");
+            string startSquareO = responseMove.Split(',')[0];
+            string endSquareO = responseMove.Split(',')[1];
+
+            squares[endSquareO].SetCoin(squares[startSquareO].GetCoin());
+            squares[startSquareO].SetCoin(null);
+
+        }
+
+        public void OnClickApproveSelection()
+        {
+            PlayMove();
+        }
+
+        public void PlayMove()
+        {
+            if (!firstMoveDone)
+            {
+                firstMoveDone = true;
+                PlayFirstMove("(" + startSquare.GetValue() + "," + endSquare.GetValue() + ")");
+            }
+            else
+            {
+
+                PlayNextMove("(" + startSquare.GetValue() + "," + endSquare.GetValue() + ")");
+            }
+
+            playerTurnMode = PlayerTurnMode.Finished;
+
+            OnPlayerMoveFinished(); 
+        }
+
+        public void PlayFirstMove(string move)
+        {
+            chatHistory.Add(new string[] { "user", initialPrompt + move });
+
+            StartCoroutine(gptClient.Ask(chatHistory, (response) =>
+            {
+                OnOpponentMove(response.Choices[0].Message.Content);
+                chatHistory.Add(new string[] { "system", response.Choices[0].Message.Content });
+            }));
+        }
+
+        public void PlayNextMove(string move)
+        {
+            chatHistory.Add(new string[] { "user", "My next move is" + move });
+
+            Debug.Log(chatHistory.Count);
+            StartCoroutine(gptClient.Ask(chatHistory, (response) =>
+            {
+                OnOpponentMove(response.Choices[0].Message.Content);
+                chatHistory.Add(new string[] { "system", response.Choices[0].Message.Content });
+            }));
+        }
+
+        struct CoinDetail
+        {
+            public Coin coin;
+            public Vector3 initialPosition;
+        }
+
+        public void SetCoinsToSquaresInitially()
+        {
+            List<string> keys = squares.Keys.ToList(); 
+            for (int i = 0; i < keys.Count; i++)
+            {
+                if (i < 16)
+                {
+                    squares[keys[i]].SetCoin(coins[i].coin);
+                }
+
+                if (i > 47)
+                {
+                    squares[keys[i]].SetCoin(coins[i - 32].coin);
+                }
+            }
         }
     }
 }

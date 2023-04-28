@@ -48,20 +48,43 @@ namespace ChatGPTChess
 
         public void MoveTo(Vector3 position)
         {
-            StartCoroutine(LerpPosition(position, 2f));
+            StartCoroutine(LerpAndMove(position, 1f));
         }
 
-        IEnumerator LerpPosition(Vector3 targetPosition, float duration)
+        IEnumerator LerpAndMove(Vector3 targetPosition, float duration)
         {
+            Vector3 firstPosition = (new Vector3(transform.localPosition.x, 2f, transform.localPosition.z)); 
             float time = 0;
             Vector3 startPosition = transform.localPosition;
-            while (time < duration)
+            while (time < duration/3)
             {
-                transform.localPosition = Vector3.Lerp(startPosition, targetPosition, time / duration);
+                transform.localPosition = Vector3.Lerp(startPosition, firstPosition, time / (duration/3) );
                 time += Time.deltaTime;
                 yield return null;
             }
-            transform.localPosition = targetPosition;
+            transform.localPosition = firstPosition;
+
+            Vector3 secondPosition = (new Vector3(targetPosition.x, 2f, targetPosition.z));
+            time = 0;
+            startPosition = transform.localPosition;
+            while (time < duration / 3)
+            {
+                transform.localPosition = Vector3.Lerp(startPosition, secondPosition, time / (duration / 3));
+                time += Time.deltaTime;
+                yield return null;
+            }
+            transform.localPosition = secondPosition;
+
+            Vector3 thirdPosition = (new Vector3(transform.localPosition.x, 0f, transform.localPosition.z));
+            time = 0;
+            startPosition = transform.localPosition;
+            while (time < duration / 3)
+            {
+                transform.localPosition = Vector3.Lerp(startPosition, thirdPosition, time / (duration / 3));
+                time += Time.deltaTime;
+                yield return null;
+            }
+            transform.localPosition = thirdPosition;
         }
     }
 }

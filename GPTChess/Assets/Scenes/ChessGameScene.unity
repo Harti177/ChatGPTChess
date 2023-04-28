@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: a3
+  squareValue: c1
   meshRenderer: {fileID: 115105007}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: a4
+  squareValue: d1
   meshRenderer: {fileID: 152142622}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: d2
+  squareValue: b4
   meshRenderer: {fileID: 154687131}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: e6
+  squareValue: f5
   meshRenderer: {fileID: 173522924}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: g3
+  squareValue: c7
   meshRenderer: {fileID: 183998780}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: h2
+  squareValue: b8
   meshRenderer: {fileID: 257076494}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: h6
+  squareValue: f8
   meshRenderer: {fileID: 331115367}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -1799,7 +1799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: c1
+  squareValue: a3
   meshRenderer: {fileID: 354626160}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -1986,7 +1986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: d8
+  squareValue: h4
   meshRenderer: {fileID: 371340168}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -2102,7 +2102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: a2
+  squareValue: b1
   meshRenderer: {fileID: 382212261}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -2218,7 +2218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: g6
+  squareValue: f7
   meshRenderer: {fileID: 394166020}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -2334,7 +2334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: c5
+  squareValue: e3
   meshRenderer: {fileID: 440129202}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -2450,7 +2450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: d3
+  squareValue: c4
   meshRenderer: {fileID: 461195124}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -2720,7 +2720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: c4
+  squareValue: d3
   meshRenderer: {fileID: 562001073}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -2836,7 +2836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: b4
+  squareValue: d2
   meshRenderer: {fileID: 566231559}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -3019,7 +3019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: h1
+  squareValue: a8
   meshRenderer: {fileID: 599350793}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -3135,7 +3135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: d1
+  squareValue: a4
   meshRenderer: {fileID: 608763378}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -3251,7 +3251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: a6
+  squareValue: f1
   meshRenderer: {fileID: 642177093}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -3367,7 +3367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: a7
+  squareValue: g1
   meshRenderer: {fileID: 677704931}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -3483,7 +3483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: d5
+  squareValue: e4
   meshRenderer: {fileID: 681623469}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -4019,7 +4019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: e4
+  squareValue: d5
   meshRenderer: {fileID: 791455280}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -4322,7 +4322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: c7
+  squareValue: g3
   meshRenderer: {fileID: 850954208}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -4438,7 +4438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: f3
+  squareValue: c6
   meshRenderer: {fileID: 853657057}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -4554,7 +4554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: f4
+  squareValue: d6
   meshRenderer: {fileID: 855423678}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -4670,7 +4670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: b3
+  squareValue: c2
   meshRenderer: {fileID: 874290954}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -4824,7 +4824,6 @@ GameObject:
   m_Component:
   - component: {fileID: 900828689}
   - component: {fileID: 900828688}
-  - component: {fileID: 900828690}
   - component: {fileID: 900828691}
   m_Layer: 0
   m_Name: GamePlay
@@ -4847,6 +4846,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cancelSelection: {fileID: 289322291}
   approveSelection: {fileID: 289137921}
+  coinsParent: {fileID: 60733372}
+  squaresParent: {fileID: 1363619299}
+  gptClient: {fileID: 1106639823}
 --- !u!4 &900828689
 Transform:
   m_ObjectHideFlags: 0
@@ -4862,20 +4864,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &900828690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900828687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c4fbb56544be4ca03bf15c33688d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinsParent: {fileID: 60733372}
-  squaresParent: {fileID: 1363619299}
 --- !u!114 &900828691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5009,7 +4997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: f2
+  squareValue: b6
   meshRenderer: {fileID: 914177169}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -5357,7 +5345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: f1
+  squareValue: a6
   meshRenderer: {fileID: 1042076512}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -5611,7 +5599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: h4
+  squareValue: d8
   meshRenderer: {fileID: 1074202518}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -5763,6 +5751,52 @@ MonoBehaviour:
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
+--- !u!1 &1106639821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106639824}
+  - component: {fileID: 1106639823}
+  m_Layer: 0
+  m_Name: ChatGPT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1106639823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106639821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3458dcbe48f654742a448e7f35393ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiURL: https://unitydemoeastus.openai.azure.com/openai/deployments/unitydemoturbo35/chat/completions?api-version=2023-03-15-preview
+  apiKey: f64f174bd5614385ad5e35bf0b846d5d
+--- !u!4 &1106639824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106639821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37062645, y: 0.12537217, z: 0.5183892}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1120194712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5881,7 +5915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: c8
+  squareValue: h3
   meshRenderer: {fileID: 1125064206}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -6128,7 +6162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: e2
+  squareValue: b5
   meshRenderer: {fileID: 1186520973}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -6244,7 +6278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: f5
+  squareValue: e6
   meshRenderer: {fileID: 1198125090}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -6535,7 +6569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: f8
+  squareValue: h6
   meshRenderer: {fileID: 1320643327}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -6651,7 +6685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: b8
+  squareValue: h2
   meshRenderer: {fileID: 1327758973}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -6888,7 +6922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: c2
+  squareValue: b3
   meshRenderer: {fileID: 1374230621}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -7120,7 +7154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: e7
+  squareValue: g5
   meshRenderer: {fileID: 1427208343}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -7352,7 +7386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: b1
+  squareValue: a2
   meshRenderer: {fileID: 1495359813}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -7468,7 +7502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: d6
+  squareValue: f4
   meshRenderer: {fileID: 1530473937}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -7651,7 +7685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: d7
+  squareValue: g4
   meshRenderer: {fileID: 1534977472}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -7767,7 +7801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: g8
+  squareValue: h7
   meshRenderer: {fileID: 1543169659}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -7883,7 +7917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: h7
+  squareValue: g8
   meshRenderer: {fileID: 1549558824}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -7999,7 +8033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: e1
+  squareValue: a5
   meshRenderer: {fileID: 1551229924}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -8184,6 +8218,42 @@ Transform:
   m_Father: {fileID: 1363619299}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1588283936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1588283937}
+  m_Layer: 5
+  m_Name: Chat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1588283937
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588283936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1863313774}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1639858168
 GameObject:
   m_ObjectHideFlags: 0
@@ -8299,7 +8369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: g1
+  squareValue: a7
   meshRenderer: {fileID: 1658000633}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -8415,7 +8485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: b7
+  squareValue: g2
   meshRenderer: {fileID: 1678649601}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -8673,7 +8743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: h5
+  squareValue: e8
   meshRenderer: {fileID: 1709778372}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -8864,7 +8934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: e8
+  squareValue: h5
   meshRenderer: {fileID: 1768064851}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -9327,7 +9397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: g2
+  squareValue: b7
   meshRenderer: {fileID: 1846898973}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -9556,6 +9626,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 232757536}
+  - {fileID: 1588283937}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9611,7 +9682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: e3
+  squareValue: c5
   meshRenderer: {fileID: 1898419902}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -9727,7 +9798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: b5
+  squareValue: e2
   meshRenderer: {fileID: 1900083816}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -9843,7 +9914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: g4
+  squareValue: d7
   meshRenderer: {fileID: 1922816642}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -10046,7 +10117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: a5
+  squareValue: e1
   meshRenderer: {fileID: 1950322341}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -10229,7 +10300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: a8
+  squareValue: h1
   meshRenderer: {fileID: 2018549888}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -10491,7 +10562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: f7
+  squareValue: g6
   meshRenderer: {fileID: 2025788496}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -10607,7 +10678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: c6
+  squareValue: f3
   meshRenderer: {fileID: 2046813174}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -10877,7 +10948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: b6
+  squareValue: f2
   meshRenderer: {fileID: 2109526009}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -10993,7 +11064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: g5
+  squareValue: e7
   meshRenderer: {fileID: 2120110752}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
@@ -11109,7 +11180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f437abf8db39634ca0ce035aad87ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareValue: h3
+  squareValue: c8
   meshRenderer: {fileID: 2135242486}
   hightlightMaterial: {fileID: 2100000, guid: ea688f33046e2ce4ab57bc2673cfbe3f, type: 2}
   normalMaterial: {fileID: 2100000, guid: c47259cb9d5010140b58ce94c79f6d29, type: 2}
