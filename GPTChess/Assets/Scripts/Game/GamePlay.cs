@@ -35,7 +35,7 @@ namespace ChatGPTChess
 
         //ChatGPT
         [SerializeField] private ChatGPTClient gptClient;
-        string initialPrompt = "We are going to play chess now. We can play describing the moves using algebraic notation. I will be white. Tell your move in the same format as I said. Don't ever repeat my move. My move is ";
+        string initialPrompt = "We are going to play chess now. We can play describing the moves using algebraic notation. I will play first and move white coins. So you will be moving black coins. My move is ";
         List<string[]> chatHistory;
 
         [SerializeField] private MSTTS mstts;
@@ -292,6 +292,7 @@ namespace ChatGPTChess
 
             StartCoroutine(gptClient.Ask(chatHistory, (response) =>
             {
+                chatField.text = "";
                 mstts.Speak(response.Choices[0].Message.Content);
                 AddToChatHistory(new string[] { "system", response.Choices[0].Message.Content });
             }));
