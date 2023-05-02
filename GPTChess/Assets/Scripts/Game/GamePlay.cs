@@ -39,6 +39,7 @@ namespace ChatGPTChess
         List<string[]> chatHistory;
 
         [SerializeField] private MSTTS mstts;
+        [SerializeField] private MSSTT mssts;
 
         [SerializeField] private GameObject chatWindow; 
         [SerializeField] private TextMeshProUGUI chatWindowContent; 
@@ -292,10 +293,17 @@ namespace ChatGPTChess
 
             StartCoroutine(gptClient.Ask(chatHistory, (response) =>
             {
+                mssts.ClearMessage(); 
                 chatField.text = "";
                 mstts.Speak(response.Choices[0].Message.Content);
                 AddToChatHistory(new string[] { "system", response.Choices[0].Message.Content });
             }));
+        }
+
+        public void OnClickClear()
+        {
+            mssts.ClearMessage();
+            chatField.text = "";
         }
 
         struct CoinDetail
