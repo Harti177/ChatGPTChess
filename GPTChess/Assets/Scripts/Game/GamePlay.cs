@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using TMPro;
+using Newtonsoft.Json;
 
 namespace ChatGPTChess
 {
@@ -35,7 +36,7 @@ namespace ChatGPTChess
 
         //ChatGPT
         [SerializeField] private ChatGPTClient gptClient;
-        string initialPrompt = "We are going to play chess now. We can play describing the moves using algebraic notation. I will play first and move white coins. So you will be moving black coins. My move is ";
+
         List<string[]> chatHistory;
 
         [SerializeField] private MSTTS mstts;
@@ -43,7 +44,10 @@ namespace ChatGPTChess
 
         [SerializeField] private GameObject chatWindow; 
         [SerializeField] private TextMeshProUGUI chatWindowContent; 
-        [SerializeField] private TMP_InputField chatField; 
+        [SerializeField] private TMP_InputField chatField;
+
+        string responseMove;
+        ChessMoves opponentMoves; 
 
         bool firstMoveDone = false;
 
@@ -205,10 +209,13 @@ namespace ChatGPTChess
             startSquare = null;
             endSquare = null;
 
-            string responseMove = response.Split('(', ')')[1];
-            responseMove = responseMove.Replace(" ", "");
-            string startSquareO = responseMove.Split(',')[0];
-            string endSquareO = responseMove.Split(',')[1];
+            mstts.Speak(response.Split('@', '@')[0]);
+            responseMove = response.Split('@', '@')[1];
+
+            opponentMoves = JsonConvert.DeserializeObject<ChessMoves>(responseMove);
+
+            string startSquareO = opponentMoves.Moves[opponentMoves.Moves.Count - 1].StartSquare;
+            string endSquareO = opponentMoves.Moves[opponentMoves.Moves.Count - 1].EndSquare;
 
             squares[endSquareO].SetCoin(squares[startSquareO].GetCoin());
             squares[startSquareO].SetCoin(null);
@@ -225,12 +232,22 @@ namespace ChatGPTChess
             if (!firstMoveDone)
             {
                 firstMoveDone = true;
-                PlayFirstMove("(" + startSquare.GetValue() + "," + endSquare.GetValue() + ")");
+                ChessMove move = new ChessMove();
+                move.StartSquare = startSquare.GetValue();
+                move.EndSquare = endSquare.GetValue();
+                move.Type = startSquare.GetCoin().GetCoinCharacter().ToString();
+                ChessMoves moves = new ChessMoves();
+                moves.Moves = new List<ChessMove>() { move };
+                PlayFirstMove(JsonConvert.SerializeObject(moves));
             }
             else
             {
-
-                PlayNextMove("(" + startSquare.GetValue() + "," + endSquare.GetValue() + ")");
+                ChessMove move = new ChessMove();
+                move.StartSquare = startSquare.GetValue();
+                move.EndSquare = endSquare.GetValue();
+                move.Type = startSquare.GetCoin().GetCoinCharacter().ToString();
+                opponentMoves.Moves.Add(move);
+                PlayNextMove(JsonConvert.SerializeObject(opponentMoves));
             }
 
             playerTurnMode = PlayerTurnMode.Finished;
@@ -240,25 +257,23 @@ namespace ChatGPTChess
 
         public void PlayFirstMove(string move)
         {
-            AddToChatHistory(new string[] { "user", initialPrompt + move }); 
+            AddToChatHistory(new string[] { "user", @"You are a grandmaster playing chess with me. I tell my move in the following json format. You append your move and just provide the updated json. Always place the json between @ and @." + move }); 
 
             StartCoroutine(gptClient.Ask(chatHistory, (response) =>
             {
                 OnOpponentMove(response.Choices[0].Message.Content);
-                mstts.Speak(response.Choices[0].Message.Content);
                 AddToChatHistory(new string[] { "system", response.Choices[0].Message.Content }); 
             }));
         }
 
         public void PlayNextMove(string move)
         {
-            AddToChatHistory(new string[] { "user", "My next move is" + move }); 
+            AddToChatHistory(new string[] { "user", move }); 
 
             Debug.Log(chatHistory.Count);
             StartCoroutine(gptClient.Ask(chatHistory, (response) =>
             {
                 OnOpponentMove(response.Choices[0].Message.Content);
-                mstts.Speak(response.Choices[0].Message.Content);
                 AddToChatHistory(new string[] { "system", response.Choices[0].Message.Content }); 
             }));
         }
@@ -274,7 +289,7 @@ namespace ChatGPTChess
                 if(chat[0] == "user")
                     chatHistoryText += "\n" + chat[0] + ": " + chat[1];
                 else
-                    chatHistoryText += "\n" + "<color=blue>" + chat[0] + ": " + chat[1] + "</color=blue>";
+                    chatHistoryText += "\n" + "<color=blue>" + chat[0] + ": " + chat[1].Split('@', '@')[0] + "</color=blue>";
             }
 
             chatWindowContent.text = chatHistoryText; 
@@ -310,6 +325,18 @@ namespace ChatGPTChess
         {
             public Coin coin;
             public Vector3 initialPosition;
+        }
+
+        public class ChessMoves
+        {
+            public List<ChessMove> Moves { get; set; }
+        }
+
+        public class ChessMove
+        {
+            public string StartSquare { get; set; }
+            public string EndSquare { get; set; }
+            public string Type { get; set; }
         }
 
         public void SetCoinsToSquaresInitially()

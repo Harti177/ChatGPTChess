@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 public class ChatGPTClient : MonoBehaviour
 {
-    public string apiURL = @"https://unitydemoeastus.openai.azure.com/openai/deployments/unitydemoturbo35/chat/completions?api-version=2023-03-15-preview";
+    public string apiURL = @"https://unitydemoeastus.openai.azure.com/openai/deployments/unitydemogpt4/chat/completions?api-version=2023-03-15-preview";
 
     public string apiKey = "f64f174bd5614385ad5e35bf0b846d5d";
 

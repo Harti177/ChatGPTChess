@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -347,7 +347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &42302416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,6 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 2
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -530,8 +531,8 @@ Transform:
   - {fileID: 1282283286}
   - {fileID: 1051233158}
   - {fileID: 1532322644}
-  - {fileID: 38011487}
   - {fileID: 1702866781}
+  - {fileID: 38011487}
   - {fileID: 540979594}
   - {fileID: 1792592381}
   - {fileID: 1925353497}
@@ -2175,7 +2176,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331115363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2402,6 +2403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -3178,6 +3180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -3341,6 +3344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 3
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -3640,6 +3644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 4
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -4764,6 +4769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -5023,6 +5029,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 268067092}
     m_Modifications:
+    - target: {fileID: 3646825468512240917, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3646825468512240919, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
       propertyPath: m_Name
       value: AvatarStand
@@ -5037,11 +5047,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3646825468512240923, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.005
       objectReference: {fileID: 0}
     - target: {fileID: 3646825468512240923, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.65
+      value: 0.515
       objectReference: {fileID: 0}
     - target: {fileID: 3646825468512240923, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5080,6 +5090,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1513260361}
     - target: {fileID: 3646825469594116461, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
+      propertyPath: setHandPose
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646825469594116461, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
       propertyPath: _wristOffset
       value: 
       objectReference: {fileID: 1513260362}
@@ -5087,6 +5101,10 @@ PrefabInstance:
       propertyPath: _handPose
       value: 
       objectReference: {fileID: 999471778}
+    - target: {fileID: 3646825469594116462, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
+      propertyPath: setHandPose
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3646825469594116462, guid: 34e8dec1239fb11478632526827ad1dc, type: 3}
       propertyPath: _wristOffset
       value: 
@@ -5787,6 +5805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -6326,6 +6345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -6467,6 +6487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -6659,7 +6680,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946058506}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7069,6 +7090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 2
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -7173,6 +7195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 2
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -7249,7 +7272,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074202514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7310,6 +7333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 5
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -7322,11 +7346,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7372,6 +7396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 5
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -7489,6 +7514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -7625,7 +7651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1131954557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7685,7 +7711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1143621866
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7831,6 +7857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -8228,6 +8255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -8295,6 +8323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 1
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -8602,6 +8631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -9478,6 +9508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 3
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -9913,7 +9944,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549558820}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10661,6 +10692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -10673,11 +10705,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10728,6 +10760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 4
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -10804,7 +10837,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709778368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11054,6 +11087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -11383,6 +11417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 3
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -11450,6 +11485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 2
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -11517,6 +11553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -11737,6 +11774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 1
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -12340,6 +12378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 1
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -12742,6 +12781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 3
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -13100,6 +13140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -13171,6 +13212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -13486,6 +13528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 1
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -13557,6 +13600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  character: 0
   meshRenderer: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   normalMaterial: {fileID: 0}
@@ -13865,7 +13909,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135242482}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

@@ -11,7 +11,18 @@ namespace ChatGPTChess
             White
         }
 
-        [SerializeField] private Type type; 
+        public enum Character
+        {
+            Pawn,
+            Rook,
+            Knight,
+            Bishop,
+            Queen, 
+            King
+        }
+
+        [SerializeField] private Type type;
+        [SerializeField] private Character character; 
 
         [SerializeField] private MeshRenderer meshRenderer;
         [SerializeField] private Material hightlightMaterial;
@@ -32,6 +43,11 @@ namespace ChatGPTChess
         public Type GetCoinType()
         {
             return type;
+        }
+
+        public Character GetCoinCharacter()
+        {
+            return character;
         }
 
         public void HighLight(bool highLight)
