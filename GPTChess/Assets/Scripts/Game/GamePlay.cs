@@ -155,6 +155,8 @@ namespace ChatGPTChess
 
                 approveSelection.gameObject.SetActive(true);
                 playerTurnMode = PlayerTurnMode.EndSquareSelected;
+
+                PlayMove();
             }
         }
 
